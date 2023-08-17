@@ -5,4 +5,4 @@ WORKDIR /app
 COPY . .
 RUN yarn install --production
 CMD ["node", "pokemon-showdown"]
-EXPOSE 80
+EXPOSE 8000
