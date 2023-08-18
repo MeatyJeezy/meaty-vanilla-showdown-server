@@ -61,25 +61,25 @@ exports.wsdeflate = {
  *  something.
  * @type {{port: number, options: {key: string, cert: string}} | null}
  */
-exports.ssl = null;
+// exports.ssl = null;
 
 
-// example:
-// exports.ssl = {
-// 	port: 443,
-// 	options: {
-// 		key: '/root/showdown/serverside/config/ssl/privkey1.pem',
-// 		cert: '/root/showdown/serverside/config/ssl/fullchain1.pem',
-// 	},
-// };
+//example:
+exports.ssl = {
+	port: 443,
+	options: {
+		key: '/etc/letsencrypt/live/showdown.meatyjesus.ca/privkey.pem',
+		cert: '/etc/letsencrypt/live/showdown.meatyjesus.ca/fullchain.pem',
+	},
+};
 
 
 /*
 Main's SSL deploy script from Let's Encrypt looks like:
-	cp /etc/letsencrypt/live/sim.psim.us/privkey.pem ~user/Pokemon-Showdown/config/ssl/
-	cp /etc/letsencrypt/live/sim.psim.us/fullchain.pem ~user/Pokemon-Showdown/config/ssl/
-	chown user:user ~user/Pokemon-Showdown/config/ssl/privkey.pem
-	chown user:user ~user/Pokemon-Showdown/config/ssl/fullchain.pem
+	cp /etc/letsencrypt/live/showdown.meatyjesus.ca/privkey.pem config/ssl/
+	cp /etc/letsencrypt/live/sim.psim.us/fullchain.pem config/ssl/
+	chown user:user config/ssl/privkey.pem
+	chown user:user config/ssl/fullchain.pem
 */
 
 /**
