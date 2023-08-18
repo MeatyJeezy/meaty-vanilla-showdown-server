@@ -68,8 +68,8 @@ exports.wsdeflate = {
 exports.ssl = {
 	port: 443,
 	options: {
-		key: 'config/ssl/privkey.pem',
-		cert: 'config/ssl/fullchain.pem',
+		key: '/app/config/ssl/privkey.pem',
+		cert: '/app/config/ssl/fullchain.pem',
 	},
 };
 
