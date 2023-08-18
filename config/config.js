@@ -90,7 +90,8 @@ Main's SSL deploy script from Let's Encrypt looks like:
  *   know what you are doing
  * @type {false | string[]}.
  */
-exports.proxyip = '192.168.1.29';
+exports.proxyip = 'ps.meatyjesus.ca';
+exports.proxyip = '20.220.32.44';
 
 /**
  * Various debug options
