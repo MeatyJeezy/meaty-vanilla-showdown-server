@@ -68,8 +68,8 @@ exports.wsdeflate = {
 exports.ssl = {
 	port: 443,
 	options: {
-		key: '/etc/letsencrypt/live/showdown.meatyjesus.ca/privkey.pem',
-		cert: '/etc/letsencrypt/live/showdown.meatyjesus.ca/fullchain.pem',
+		key: 'config/ssl/privkey.pem',
+		cert: 'config/ssl/fullchain.pem',
 	},
 };
 
